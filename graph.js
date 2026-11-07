@@ -14,3 +14,13 @@ function addRoad(city1, city2, distance) {
   graph[city2].push({ city: city1, distance: distance });
 }
 
+// Add sample roads (connecting cities with distances)
+addRoad("A", "B", 10);
+addRoad("A", "C", 15);
+addRoad("B", "D", 12);
+addRoad("C", "D", 20);
+addRoad("D", "E", 5);
+
+console.log(JSON.stringify(graph, null, 2));
+
+
